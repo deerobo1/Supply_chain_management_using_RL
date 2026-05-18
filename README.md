@@ -1,4 +1,4 @@
-# 📦 Deep Reinforcement Learning for Supply Chain Inventory Optimization
+#  Deep Reinforcement Learning for Supply Chain Inventory Optimization
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![RL Framework](https://img.shields.io/badge/Gymnasium-0.29%2B-green.svg?logo=gymnasium&logoColor=white)](https://gymnasium.farama.org/)
@@ -13,7 +13,7 @@ This repository presents a **unified Reinforcement Learning (RL) and Deep Reinfo
 
 ---
 
-## 🚀 Key Highlights & Implementations
+##  Key Highlights & Implementations
 
 *   **Production & Exploratory Workspaces**: Contains both clean, production-ready models and detailed exploratory scripts incorporating theoretical convergence comparisons.
 *   **Dual Environment Architectures**: Includes a standard immediate-delivery environment and an advanced 2-day lead time simulation with queue-based order tracking.
@@ -23,7 +23,7 @@ This repository presents a **unified Reinforcement Learning (RL) and Deep Reinfo
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 The project is structured into modular sections, keeping a clean division between core production scripts and exploratory work.
 
@@ -54,7 +54,7 @@ Supply_chain_management_DRL/
 
 ---
 
-## 📈 Environment Formulation
+##  Environment Formulation
 
 The inventory management system is modeled as a Markov Decision Process (MDP) with the following components:
 
@@ -100,7 +100,7 @@ Where:
 
 ---
 
-## 🧠 Implemented Models & Mathematical Details
+##  Implemented Models & Mathematical Details
 
 ### 1. Tabular Q-Learning
 Learns the action-value function $Q(s, a)$, representing the expected cumulative discounted reward of taking action $a$ in state $s$ and thereafter following the optimal policy:
@@ -131,7 +131,7 @@ $$Y = \beta_0 + \sum_{i=1}^{k} \beta_i X_i + \epsilon$$
 
 ---
 
-## 🛠️ Getting Started & Execution
+##  Getting Started & Execution
 
 ### 1. Setup Environment
 Clone the repository and install the dependencies:
@@ -173,7 +173,7 @@ Ensure `DataCoSupplyChainDataset.csv` is extracted and placed in both the `Code 
 
 ---
 
-## 📊 Performance Benchmarks & Convergence
+##  Performance Benchmarks & Convergence
 
 ### Q-Learning & TD(0) Training Progress
 During training, epsilon decays from $1.0$ down to $0.01$ over $1000$ episodes. The agent rapidly transitions from exploration to exploitation, causing the average reward (profit) to climb and stabilize.
@@ -192,7 +192,7 @@ With immediate delivery, the agent behaves reactively: ordering only when invent
 
 ---
 
-## 🎓 References & Reports
+##  References & Reports
 *   For complete research details, see [Report.pdf](Report.pdf).
 *   For slide decks and presentation materials, see [RL_PPT.pptx](RL_PPT.pptx).
 *   For visual convergence progress, see [Demo Screenshots.pdf](Demo Screenshots.pdf).
